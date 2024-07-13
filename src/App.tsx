@@ -11,14 +11,18 @@ import ClassCounter from './components/class/ClassCounter';
 import { PrivateComponent } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { ListComponent } from './components/generics/List';
+import { Toast } from './components/templateLiterals/Toast';
 
 function App() {
   return (
     <div className="App">
 
+      <Toast position='right-top'/>
+      <Toast position='center'/>
+
       {/* generics  */}
-      <ListComponent items={['nik', 'ekta']} clickHandler={(item) => console.log(item)}/>
-      <ListComponent items={[3, 6 , 2, 9]} clickHandler={(item) => console.log(item)}/>
+      {/* <ListComponent items={['nik', 'ekta']} clickHandler={(item) => console.log(item)}/>
+      <ListComponent items={[3, 6 , 2, 9]} clickHandler={(item) => console.log(item)}/> */}
 
       {/* <PrivateComponent isLoggedIn={true} component={Profile} />
       <PrivateComponent isLoggedIn={false} component={Profile} /> */}
