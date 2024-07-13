@@ -12,13 +12,18 @@ import { PrivateComponent } from './components/auth/Private';
 import { Profile } from './components/auth/Profile';
 import { ListComponent } from './components/generics/List';
 import { Toast } from './components/templateLiterals/Toast';
+import { CustomButton } from './components/html/button';
 
 function App() {
   return (
     <div className="App">
 
-      <Toast position='right-top'/>
-      <Toast position='center'/>
+      <CustomButton variant='primary' clickHandler={(e: any) => console.log('as', e)}>Primary Button</CustomButton>
+      <br/>
+      <CustomButton variant='secondary'>Secondary Button</CustomButton>
+
+      {/* <Toast position='right-top'/>
+      <Toast position='center'/> */}
 
       {/* generics  */}
       {/* <ListComponent items={['nik', 'ekta']} clickHandler={(item) => console.log(item)}/>
