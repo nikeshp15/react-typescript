@@ -7,14 +7,17 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Box } from './components/context/Box';
 import { UserContextProvider } from './components/context/UserContext';
 import { MainUser } from './components/context/MainUser';
+import ClassCounter from './components/class/ClassCounter';
 
 function App() {
   return (
     <div className="App">
 
-      <UserContextProvider>
+      <ClassCounter message='abcd'/>
+
+      {/* <UserContextProvider>
         <MainUser/>
-      </UserContextProvider>
+      </UserContextProvider> */}
 
       {/* <ThemeContextProvider>
         <Box></Box>
